@@ -2,8 +2,8 @@
 //  GameScene.h
 //  Populate
 //
-//  Created by Jarod Luebbert on 4/15/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Jarod Luebbert on 4/14/11.
+//  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
 
 #import "cocos2d.h"
@@ -12,6 +12,11 @@
 
 @interface GameScene : CCLayer
 {
+	b2World* world;
+	GLESDebugDraw *m_debugDraw;
 }
+
++(CCScene *) scene;
+-(void) addNewSpriteWithCoords:(CGPoint)p;
 
 @end

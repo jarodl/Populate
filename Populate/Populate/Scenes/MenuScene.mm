@@ -7,7 +7,7 @@
 //
 
 #import "MenuScene.h"
-#import "HelloWorldLayer.h"
+#import "GameScene.h"
 
 #define kMenuItemFontName @"MarkerFelt-Thin"
 #define kMenuItemFontSize 32
@@ -64,7 +64,7 @@
 - (void)playItemTouched:(id)sender
 {
     CCLOG(@"play item touched: %@", sender);
-    [[CCDirector sharedDirector] replaceScene:[HelloWorldLayer scene]];
+    [[CCDirector sharedDirector] replaceScene:[GameScene scene]];
 }
 
 @end
