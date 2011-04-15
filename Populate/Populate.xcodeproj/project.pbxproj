@@ -160,6 +160,8 @@
 		7AAD22991357D71C000475D9 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD22981357D71C000475D9 /* HelloWorldLayer.mm */; };
 		7AAD229C1357D71C000475D9 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD229B1357D71C000475D9 /* GLES-Render.mm */; };
 		7AAD229F1357D71C000475D9 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD229E1357D71C000475D9 /* blocks.png */; };
+		7AFDA86F13580FC200D57868 /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDA86C13580FC200D57868 /* GameScene.mm */; };
+		7AFDA87013580FC200D57868 /* MenuScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDA86E13580FC200D57868 /* MenuScene.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -470,6 +472,10 @@
 		7AAD229B1357D71C000475D9 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		7AAD229D1357D71C000475D9 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		7AAD229E1357D71C000475D9 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		7AFDA86B13580FC200D57868 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Scenes/GameScene.h; sourceTree = "<group>"; };
+		7AFDA86C13580FC200D57868 /* GameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameScene.mm; path = Scenes/GameScene.mm; sourceTree = "<group>"; };
+		7AFDA86D13580FC200D57868 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuScene.h; path = Scenes/MenuScene.h; sourceTree = "<group>"; };
+		7AFDA86E13580FC200D57868 /* MenuScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MenuScene.mm; path = Scenes/MenuScene.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -896,6 +902,10 @@
 		7AFDA86913580EF100D57868 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7AFDA86B13580FC200D57868 /* GameScene.h */,
+				7AFDA86C13580FC200D57868 /* GameScene.mm */,
+				7AFDA86D13580FC200D57868 /* MenuScene.h */,
+				7AFDA86E13580FC200D57868 /* MenuScene.mm */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -1102,6 +1112,8 @@
 				7AAD22931357D71C000475D9 /* AppDelegate.mm in Sources */,
 				7AAD22991357D71C000475D9 /* HelloWorldLayer.mm in Sources */,
 				7AAD229C1357D71C000475D9 /* GLES-Render.mm in Sources */,
+				7AFDA86F13580FC200D57868 /* GameScene.mm in Sources */,
+				7AFDA87013580FC200D57868 /* MenuScene.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
