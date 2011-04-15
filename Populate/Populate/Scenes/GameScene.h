@@ -16,7 +16,9 @@
 	GLESDebugDraw *m_debugDraw;
 }
 
-+(CCScene *) scene;
--(void) addNewSpriteWithCoords:(CGPoint)p;
++ (GameScene *)sharedGameScene;
++ (CCScene *)scene;
+- (CCSpriteBatchNode *)getSpriteBatch;
+- (void)initBox2dWorld;
 
 @end
