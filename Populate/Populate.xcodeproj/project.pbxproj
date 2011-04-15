@@ -157,7 +157,6 @@
 		7AAD228B1357D71C000475D9 /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD228A1357D71C000475D9 /* b2WeldJoint.cpp */; };
 		7AAD22901357D71C000475D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD228F1357D71C000475D9 /* main.m */; };
 		7AAD22931357D71C000475D9 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD22921357D71C000475D9 /* AppDelegate.mm */; };
-		7AAD22961357D71C000475D9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD22951357D71C000475D9 /* RootViewController.m */; };
 		7AAD22991357D71C000475D9 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD22981357D71C000475D9 /* HelloWorldLayer.mm */; };
 		7AAD229C1357D71C000475D9 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD229B1357D71C000475D9 /* GLES-Render.mm */; };
 		7AAD229F1357D71C000475D9 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AAD229E1357D71C000475D9 /* blocks.png */; };
@@ -465,8 +464,6 @@
 		7AAD228F1357D71C000475D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7AAD22911357D71C000475D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AAD22921357D71C000475D9 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		7AAD22941357D71C000475D9 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		7AAD22951357D71C000475D9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		7AAD22971357D71C000475D9 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		7AAD22981357D71C000475D9 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		7AAD229A1357D71C000475D9 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
@@ -529,10 +526,9 @@
 		7AAD20D91357D71A000475D9 /* Populate */ = {
 			isa = PBXGroup;
 			children = (
+				7AFDA86913580EF100D57868 /* Scenes */,
 				7AAD22911357D71C000475D9 /* AppDelegate.h */,
 				7AAD22921357D71C000475D9 /* AppDelegate.mm */,
-				7AAD22941357D71C000475D9 /* RootViewController.h */,
-				7AAD22951357D71C000475D9 /* RootViewController.m */,
 				7AAD22971357D71C000475D9 /* HelloWorldLayer.h */,
 				7AAD22981357D71C000475D9 /* HelloWorldLayer.mm */,
 				7AAD229A1357D71C000475D9 /* GLES-Render.h */,
@@ -897,6 +893,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7AFDA86913580EF100D57868 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1097,7 +1100,6 @@
 				7AAD228B1357D71C000475D9 /* b2WeldJoint.cpp in Sources */,
 				7AAD22901357D71C000475D9 /* main.m in Sources */,
 				7AAD22931357D71C000475D9 /* AppDelegate.mm in Sources */,
-				7AAD22961357D71C000475D9 /* RootViewController.m in Sources */,
 				7AAD22991357D71C000475D9 /* HelloWorldLayer.mm in Sources */,
 				7AAD229C1357D71C000475D9 /* GLES-Render.mm in Sources */,
 			);
@@ -1195,6 +1197,7 @@
 				7AAD22A41357D71C000475D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
