@@ -10,8 +10,10 @@
 
 @interface Enemy : BodyNode
 {
-    
+    b2BodyDef *bodyDef;
 }
+
+@property (nonatomic, readonly) b2BodyDef *bodyDef;
 
 + (id)enemyInWorld:(b2World *)world;
 - (id)initWithWorld:(b2World *)world;

@@ -7,6 +7,7 @@
 //
 
 #import "Enemy.h"
+#import "GameScene.h"
 #import "Constants.h"
 
 #define kEnemySpriteName @"ball.png"
@@ -16,6 +17,8 @@
 @end
 
 @implementation Enemy
+
+@synthesize bodyDef;
 
 + (id)enemyInWorld:(b2World *)world
 {
@@ -43,9 +46,9 @@
     
 	// Define the dynamic body.
 	//Set up a 1m squared box in the physics world
-	b2BodyDef bodyDef;
-	bodyDef.type = b2_dynamicBody;
-	bodyDef.position.Set(startPos.x / PTM_RATIO, startPos.y / PTM_RATIO);
+    bodyDef = new b2BodyDef;
+	bodyDef->type = b2_dynamicBody;
+	bodyDef->position.Set(startPos.x / PTM_RATIO, startPos.y / PTM_RATIO);
 	
 	// Define another box shape for our dynamic body.
 	b2CircleShape shape;
@@ -56,20 +59,27 @@
 	// Define the dynamic body fixture.
 	b2FixtureDef fixtureDef;
 	fixtureDef.shape = &shape;	
-	fixtureDef.density = 1.0f;
+	fixtureDef.density = 0.95f;
 	fixtureDef.friction = 0.7f;
-    fixtureDef.restitution = 0.3f;
+    fixtureDef.restitution = 0.95f;
     
-    [super createBodyInWorld:world bodyDef:&bodyDef fixtureDef:&fixtureDef spriteFrameName:kEnemySpriteName];
+    [super createBodyInWorld:world bodyDef:bodyDef fixtureDef:&fixtureDef spriteFrameName:kEnemySpriteName];
     
-    b2Vec2 force = b2Vec2(20, 20);
-    body->ApplyLinearImpulse(force, bodyDef.position);
+    b2Vec2 force = b2Vec2(10, 10);
+    body->ApplyLinearImpulse(force, bodyDef->position);
 }
 
 - (void)update:(ccTime)delta
 {
-    // scale the player if it is active
+    // counter the gravity so the enemy isn't as affected by it
+    body->ApplyForce(-1 * body->GetMass() * [GameScene sharedGameScene].world->GetGravity(), bodyDef->position);
 }
 
+- (void)dealloc
+{
+    delete bodyDef;
+    bodyDef = NULL;
+    [super dealloc];
+}
 
 @end

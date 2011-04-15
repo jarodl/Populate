@@ -19,6 +19,8 @@ enum {
 
 @implementation GameScene
 
+@synthesize world;
+
 static GameScene *gameSceneInstance;
 
 #pragma mark -

@@ -16,6 +16,8 @@
 	GLESDebugDraw *m_debugDraw;
 }
 
+@property (readonly) b2World *world;
+
 + (GameScene *)sharedGameScene;
 + (CCScene *)scene;
 - (CCSpriteBatchNode *)getSpriteBatch;
